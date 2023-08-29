@@ -8,30 +8,31 @@ int func(float x0,float x1)
 {
   int count=1;
 
-
+  float f0=F(x0);
+  float f1=F(x1);
     do
     {
-       float x2=(x0+x1)/2;
-       float f=F(x2);a
-        cout<<"Iteration-"<<count<<" x2="<<x2<<" f(x2)="<<f(x2);
-        if(F(a)*F(x2)<0)
+       x2=(x0+x1)/2;
+       float f2=F(x2);
+        cout<<"Iteration-"<<count<<" x2="<<x2<<" f(x2)="<<f2<<"\n";
+        if(f0*f2<0)
         {
             x1=x2;
+            f1=f2;
         }
         else
         {
             x0=x2;
-           
-        }count+=1;
-    }
-    while(fabs ( F(x2))>0.001);
+            f0=f2;
+        }
+        count+=1;
+    }while(fabs ( F(x2))>0.1);
    
-    cout<<"\n\n App root="<<x2; 
+    cout<<"\n\n Approximate root="<<x2; 
 
 }
 int main()
 {
-   
    cout<<"Enter 2 guesses\n";
    cin>>x0>>x1;
 
