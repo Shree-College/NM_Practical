@@ -7,9 +7,14 @@ int main(){
      
 float x0,x1,x2,f0,f1;
 int i=1;
+up:
 cout<<"Enter initial Guess\n";
 cin>>x0;
-
+if(F(x0)>0){
+    cout<<"Incorrect Guess try again.\n";
+    goto up;
+}
+else{
 f0=F(x0);
 f1=G(x0);
 
@@ -23,6 +28,6 @@ do{
 }while(fabs(F(x1))>0.00001);
 
 cout<<"\nThe Root of equation is - "<<x1;
-
+}
     return 0;
 }
