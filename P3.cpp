@@ -7,7 +7,7 @@ int main()
 
     float a,b,c,root,f2,f1,f0;
     int i=1;
-   float e=0.01;
+   float e=0.0001;
       up:
       cout<<"Enetr 2 guesses-\n";
       cin>>a>>b;
