@@ -24,7 +24,7 @@ int main() {
    cout<<"\nThe solution is:\n";
    for(i=1; i<=n; i++) {
       x[i]=a[i][n+1]/a[i][i];
-      cout<<"x"<<i << "="<<x[i]<<" ";
+      cout<<"x"<<i << "="<<x[i]<<endl;
    }
    return(0);
 }
