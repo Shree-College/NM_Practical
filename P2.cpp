@@ -11,7 +11,7 @@ int main()
     c= n/x ;
     int i=1;
     while(x!=c){
-        cout << "\nIteration = "<<i<<"\tx = "<<x<<"\tc = "<<c;
+      cout << "\nIteration = "<<i<<"\tx = "<<x<<"\tc = "<<c;
       x= 0.5*( x + c );
       c=n/x;
       i++;
