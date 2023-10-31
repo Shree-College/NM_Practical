@@ -8,7 +8,6 @@ int main() {
    cout<<"\nEnter the elements of augmented matrix (rowwise): \n";
    for(i=1; i<=n; i++) {
       for(j=1; j<=(n+1); j++) {
-         cout << "A[" << i << ", " << j << " ]=";
          cin >> a[i][j];
       }
    }
