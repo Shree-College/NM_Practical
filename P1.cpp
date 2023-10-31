@@ -26,7 +26,7 @@ int func(float x0,float x1)
             f0=f2;
         }
         count+=1;
-    }while(fabs ( F(x2))>0.1);
+    }while(fabs ( F(x2))>0.001);
    
     cout<<"\n\n Approximate root="<<x2; 
 
